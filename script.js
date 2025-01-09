@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       form.style.display = 'none';
+      outputDiv.innerHTML = '<p>Generating sequence...</p>';
       for (let i = 1; i <= N; i++) {
           try {
               await new Promise((resolve) => setTimeout(resolve, 1000));
